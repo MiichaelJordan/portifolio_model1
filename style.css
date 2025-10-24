@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primária: #0acaec;
+  --cor-secundária: white;
+  --fonte-titulo: 'Krona One', sans-serif;
+  --fonte-paragrafo: 'Montserrat', sans-serif;
+  --cor-fonte-botao: black;
+  --cor-subtitulo: #F6F6F6;
+}
+
+body {
+  background-color: #030303;
+  font-family: var(--fonte-paragrafo);
+}
+
+/* ---------- MENU ---------- */
+.menu {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cor-primária);
+  margin-top: 10px;
+  padding: 3px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.menu:hover {
+  color: #F6F6F6;
+}
+
+.Fonte-destaque {
+  color: var(--cor-primária);
+}
+
+.menu-navegação {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 60px;
+  color: var(--cor-secundária);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px auto;
+  padding: 10px 20px;
+  margin-left: 9%;
+}
+
+/* ---------- TEXTO / SEÇÕES ---------- */
+.Alinhar-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  color: var(--cor-secundária);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 80px 8%;
+  gap: 20px;
+}
+
+.Titulo-sobrere-mim {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--cor-secundária);
+  padding: 2% 10%;
+  gap: 40px;
+}
+
+.Texto-sobre-mim {
+  display: flex;
+  flex-direction: column;
+  color: var(--cor-secundária);
+  max-width: 500px;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.paragrafo-sobre-min {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fonte-paragrafo {
+  font-family: 'Krona One', sans-serif;
+  font-size: 27px;
+  text-align: left;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+/* ---------- REDES SOCIAIS ---------- */
+.Redes-sociais {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: var(--cor-secundária);
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.Contato {
+  text-align: center;
+  min-width: 160px;
+  height: 60px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: var(--cor-primária);
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.Contato:hover {
+  background-color: rgb(228, 230, 234);
+}
+
+/* ---------- IMAGEM ---------- */
+.foto-perfil {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: var(--cor-primária) 2px solid;
+}
+
+.ajuste-imagem {
+  position: relative;
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  background-color: var(--cor-primária);
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .menu-navegação {
+    gap: 30px;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .Titulo-sobrere-mim {
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .ajuste-imagem {
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .Texto-sobre-mim {
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  .menu {
+    font-size: 18px;
+  }
+
+  .menu-navegação {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .Alinhar-texto {
+    margin: 40px 5%;
+    font-size: 16px;
+  }
+
+  .fonte-paragrafo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .Texto-sobre-mim {
+    align-items: center;
+    text-align: center;
+  }
+
+  .Redes-sociais {
+    justify-content: center;
+  }
+
+  .Contato {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .ajuste-imagem {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Smartphones pequenos (até 480px) */
+@media (max-width: 480px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-navegação {
+    gap: 10px;
+  }
+
+  .Alinhar-texto {
+    margin: 20px 5%;
+    font-size: 14px;
+  }
+
+  .fonte-paragrafo {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .Contato {
+    font-size: 16px;
+    height: auto;
+    padding: 12px;
+  }
+}
+
+/* 1. Estilo Padrão para o link */
+.link-autor {
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none; 
+    
+    /* Usa a mesma cor do texto ao redor (preto ou branco) */
+    color: inherit; 
+    
+    /* Opcional: Garante que o cursor seja o de link */
+    cursor: pointer; 
+}
+
+/* 1. Estilo ao passar o mouse (Efeito Hover) */
+.link-autor:hover {
+    /* Adiciona o sublinhado */
+    text-decoration: underline; 
+    
+    /* Opcional: Altera a cor para algo que destaque, como azul */
+    /* color: blue; */ 
+}
+
+/* 2. Estilo Padrão para o link */
+.link-autor-body {
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none; 
+    
+    /* Usa a mesma cor do texto ao redor (preto ou branco) */
+    color: var(--cor-primária);
+    
+    /* Opcional: Garante que o cursor seja o de link */
+    cursor: pointer; 
+}
+/* 2. Estilo ao passar o mouse (Efeito Hover) */
+.link-autor-body:hover {
+    /* Adiciona o sublinhado */
+    text-decoration: underline; 
+    
+    /* Opcional: Altera a cor para algo que destaque, como azul */
+    /* color: blue; */ 
+}
